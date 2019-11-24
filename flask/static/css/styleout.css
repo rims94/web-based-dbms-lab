@@ -1,0 +1,60 @@
+body {
+    background-color: aqua;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    max-width: auto;
+    min-height: auto;
+    margin: 0 auto;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+.header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+}
+
+.marq1 {
+    animation: scroll-right-left 10s 1s linear infinite alternate;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+}
+
+.marq2 {
+    font-family: sans-serif;
+    font-size: 200%;
+    animation: initial;
+}
+
+.container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fab301;
+    text-align: center;
+    color: #000000;
+}
+
+.a {
+    text-align: center;
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    color: #000000;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {
+    background-color: #b2beb5
+}
+
+.button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

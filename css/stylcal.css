@@ -1,0 +1,10 @@
+.grid-container {
+			width: 25%;
+			display: grid;
+			grid-gap: 20px;
+  			grid-template-columns: repeat(4,1fr);
+  			grid-template-rows: repeat(4,1fr);
+  			background-color: #2196F3;
+  			padding: 10px;
+  			grid-gap: 10px;
+		}	

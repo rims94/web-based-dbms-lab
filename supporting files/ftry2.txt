@@ -1,0 +1,4 @@
+hi,this is sayan
+my full name is sayan ghosh
+i am studying master degree on computer application
+recently i am trying to learn python

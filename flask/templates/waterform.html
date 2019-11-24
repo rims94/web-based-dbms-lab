@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Water Supply Form </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylein.css') }}">
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="content">
+            <form method="post">
+                <h1> <u> FORM FOR WATER SUPPLY</u> </h1>
+                <div>
+                    <p> To </p>
+                    <p>The Municipal Commissioner,</p>
+                    <p> KALYANI MUNICIPALITY,</p>
+                    <p> KALYANI, NADIA</p>
+                    <p>PIN:741235</p>
+                    <p>Sir,</p>
+                    <p>I, <select name="user"><option value="" disabled selected>Select</option><option value="owner">Owner</option><option value="occupier">Occupier</option></select>of the under noted building. I, request you to supply water for
+                        <select name="user">
+                            <option value="" disabled selected>Select</option>
+                            <option value="domestic">Domestic</option>
+                            <option value="non-domestic">Non-Domestic</option>
+                            </select> purposes.I agree to pay charges at the rates specified in this by laws. I further agree to pay the maintenance charges as fixed in the municipality policy. I, hareby mention some information below.
+                    </p>
+                </div>
+
+            
+                <fieldset forlegend>
+                    <legend>Fill Up This Informations :</legend>
+                    <div>
+                        <p><span><b> NAME</b> * : <input type="text" required placeholder="Enter your name in blockletter"></span></p>
+                    </div>
+
+                    <h4><u>Contact Information</u></h4>
+
+                    <div>
+                        <p><span><b> PH NO.</b>* &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;<input type="tel" name="phone" pattern="[0-9]{10}" required placeholder="Enter your contact no">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Email_id (optional) : </b><input type="email",name="emailaddress" placeholder="Enter your mail id"> </span></p>
+                    </div>
+
+                    <h4><u>Address</u></h4>
+
+                    <div>
+                        <p><span><b>WARD NO : </b><input type="text" placeholder="ward no">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>HOUSE NO  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</b><input type="text" placeholder="house no"></span></p>
+                    </div>
+
+                    <h4><u>Daily Usage</u></h4>
+
+                    <div>
+                        <br><span><input type="number" name="quantity" min="5" max="50" step="5" value="5"> lt./day.</span>
+                    </div>
+
+                    <h4><u>Certificates</u></h4>
+
+                    <div>
+                        <p><span><b> Identity Proof &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</b><input type="file" name="myFile" accept="image/*"><button type="button">Upload</button></span></p>
+                        <p><span><b>Income Certificate: </b><input type="file" name="myFile" accept="image/*"><button type="button">Upload</button></span></p>
+                    </div>
+
+                    <div>
+                        <h6><input type="checkbox">the above information is absolutely correct and this application form is filled by myself only.</h6>
+                    </div>
+                </fieldset>
+                <div>
+                    <h2>Your's faithfully.<br>
+                        <input type="text" required placeholder="Enter your name here"></h2>
+                </div>
+
+                <div>
+                    <p>
+                        <h5><input type="file" name="myFile" accept="image/*"><button type="button">upload signature </button></h5>
+                    </p>
+                </div>
+                <div>
+                    <h3><a href="{{ url_for('water') }}"></a><button type="submit" onclick="alert('application form submitted. Thank You.')" value="Submit">Submit</button> &nbsp;<a href="{{ url_for('waterform') }}"></a><button type="reset" onclick="alert('sure to reset?')" value="Reset">Reset</button></h3>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
